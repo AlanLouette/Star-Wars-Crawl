@@ -1,0 +1,100 @@
+body {
+    text-align: center;
+    width: 30%;
+    left: 120px;
+    background-color: black;
+    animation-name: screen;
+    animation-duration: 0s;
+    animation-delay: 7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+
+}
+
+.a-long-time-ago {
+    color: rgb(16, 16, 172);
+    animation-name: a-long-time-ago;
+    animation-delay: 0s;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+
+}
+
+.Générique {
+    font-size: large;
+    animation-name: Générique;
+    animation-delay: 8s;
+    animation-duration: 0s;
+    animation-fill-mode: forwards;
+    /*   transform: perspective(280px) rotateX(25deg); */
+    position: absolute;
+    top: 0;
+    margin-top: 400px;
+    color: yellowgreen;
+}
+
+@keyframes screen {
+    0% {
+        background-color: black;
+    }
+
+    100% {
+        background-image: url(image/FondS.jpg);
+    }
+}
+
+@keyframes a-long-time-ago {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes Générique {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes crawl {
+    0% {
+        top: 0;
+        transform: rotateX(20deg) translateZ(-0px);
+    }
+
+    100% {
+        top: -6000px;
+        transform: rotateX(25deg) translateZ(-2500px);
+    }
+}
+
+.crawl {
+    display: flex;
+    position: relative;
+    top: 9999px;
+    transform-origin: 50% 100%;
+    animation: crawl 60s linear;
+    animation-delay: 8s;
+    perspective: 280px;
+
+}
